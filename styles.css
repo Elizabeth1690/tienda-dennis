@@ -1,0 +1,355 @@
+.container-first {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #f72fa0;
+  z-index: 900;
+  height: 30px;
+}
+
+.discount-paragraph {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+#header {
+  padding: 30px 0;
+  height: 120px;
+  left: 0;
+  right: 0;
+  background-color: #000;
+}
+
+.img-logo {
+  width: 200px;
+  margin-top: 10px;
+}
+
+#nav-menu-container {
+  float: right;
+  margin-top: 13px;
+}
+.nav-menu > li {
+  margin-left: 10px;
+}
+.nav-menu > li {
+  float: left;
+}
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-scrolled .nav-menu a {
+  color: #fff;
+}
+
+.nav-menu > .menu-active > a {
+  background-color: #f72fa0;
+  padding: 10px;
+}
+.nav-menu a {
+  padding: 50 8px 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.paragraph-group {
+  color: #fff;
+}
+
+/* main*/
+
+.img-kaba {
+  width: 100%;
+  min-height: 20px;
+}
+
+.title-product-black {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+}
+.title-product-pink {
+  font-family: "Montserrat", sans-serif;
+  color: #f72fa0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.card {
+  margin: 0 auto;
+  max-width: 18rem;
+}
+
+.paragraph-price {
+  color: #f72fa0;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .row-cols-md-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .row-cols-lg-3 > * {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .title-product-black {
+    font-size: 20px;
+  }
+  .title-product-pink {
+    font-size: 20px;
+  }
+
+  .name-product {
+    font-size: 15px;
+  }
+
+  .paragraph-price {
+    font-size: 15px;
+  }
+}
+
+/* Footer*/
+
+.container-footer {
+  width: 100%;
+  height: 30px;
+  background-color: #f72fa0;
+}
+
+footer {
+  background-color: #000;
+}
+
+.img-logo-footer {
+  width: 200px;
+  margin-top: 45px;
+}
+
+.container-networks {
+  display: flex;
+  margin-top: 15px;
+}
+
+.telephone-paragraph {
+  width: 130px;
+  margin-left: 20px;
+  margin-top: 28px;
+}
+
+.paragraph-mail {
+  margin-left: 20px;
+}
+.legal-title {
+  width: 200px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a90e2;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+.mobile-menu-container {
+  position: relative;
+  display: none;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+  color: #fff;
+  position: absolute;
+  right: 15px;
+  margin-top: 15px;
+  transform: translateY(-50%);
+  z-index: 1001;
+}
+
+.navbar-toggler svg {
+  fill: #fff;
+}
+
+#mobileMenu {
+  display: none;
+  position: absolute;
+  top: 30px; /* Posiciona el menú justo debajo del botón */
+  right: 0;
+  background-color: #000;
+  border-radius: 4px;
+  padding: 10px;
+  width: 200px; /* Ajusta el ancho según necesites */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#mobileMenu.show {
+  display: block;
+}
+
+.menu-movil {
+  font-size: 10px;
+}
+
+/* Resto del CSS para #mobileMenu permanece igual */
+@media (max-width: 576px) {
+  .discount-paragraph {
+    font-size: 10px;
+    padding: 3;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-menu a {
+    font-size: 10px;
+  }
+
+  #nav-menu-container {
+    display: none;
+  }
+
+  .mobile-menu-container {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+  }
+
+  #header {
+    height: 80px;
+    position: relative; /* Asegura que el header sea el contenedor posicionado para el menú móvil */
+  }
+
+  .img-logo {
+    width: 120px;
+    margin-top: 0;
+  }
+
+  #logo {
+    position: absolute;
+    top: 69%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 991px) {
+  footer .container {
+    text-align: center;
+  }
+
+  footer .row > div {
+    margin-bottom: 30px;
+  }
+
+  footer .img-logo-footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: block;
+  }
+
+  footer .widget {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .legal-title {
+    margin-top: 20px;
+  }
+
+  footer .container-networks {
+    margin-top: 20px;
+  }
+
+  footer .telephone-paragraph,
+  footer .paragraph-mail {
+    margin-left: 0;
+    text-align: center;
+  }
+  footer .list-unstyled {
+    padding-left: 0;
+  }
+}
+
+/* Ajustes adicionales para móviles */
+@media (max-width: 576px) {
+  footer .widget {
+    max-width: 100%;
+  }
+
+  .legal-title {
+    margin-left: 50px;
+  }
+
+  footer .container-networks {
+    margin-left: 50px;
+  }
+
+  footer .telephone-paragraph {
+    margin-left: 62px;
+  }
+
+  .container-footer {
+    height: 40px;
+  }
+}
